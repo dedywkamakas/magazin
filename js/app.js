@@ -1,3 +1,6 @@
+
+         // КАТАЛОГ
+
 'use strict'
 
 let filter__lable = document.querySelector('.filter__lable');

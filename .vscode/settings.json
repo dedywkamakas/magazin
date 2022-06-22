@@ -2,5 +2,6 @@
    "scssFormatter.singleQuote": true,
    "git.ignoreLimitWarning": true,
    "liveSassCompile.settings.autoprefix": [],
-   "liveServer.settings.CustomBrowser": "chrome"
+   "liveServer.settings.CustomBrowser": "chrome",
+   "liveServer.settings.port": 5501
 }
