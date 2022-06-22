@@ -519,6 +519,66 @@
       }
 
 }
+// карточки
+
+.card {
+   background: #FFFFFF;
+   &__contant {
+      margin: 128px 0px;
+   }
+
+   &__catalog {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 30px;
+      grid-template-rows: 1fr;
+      justify-items: center;
+         @media (max-width: 998px){
+            gap: 16px;
+         } 
+   }
+
+   &__img {
+      &:hover{
+         transform: scale(1.02);
+      }
+      &:active{
+         transform: scale(0.9);
+      }
+   }
+
+   &__title {
+      font-family: 'Lato';
+      font-size: 13px;
+      line-height: 16px;
+      color: #000000;
+      padding-top: 25px;
+      margin: 0px 0px 0px 18px;
+   }
+
+   &__subtitle {
+      font-family: 'Lato';
+      max-width: 314px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      color: #5D5D5D;
+      margin: 13px 0px 18px 18px;
+   }
+
+   &__prise {
+      font-family: 'Lato';
+      font-size: 16px;
+      line-height: 19px;
+      color: #F16D7F;
+      margin: 0px 0px 20px 18px;
+   }
+}
+@media (max-width: 1138px){
+   .cardnone{
+      display: none;
+   }
+}
 
 
 
