@@ -39,6 +39,9 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: minmax(74px, auto);
       align-items: center;
+      @media (max-width: 1139px){
+         padding: 0px 32px;
+      }
       @media (max-width: 767px){
          padding: 0px 16px;
       }
@@ -86,7 +89,7 @@
    grid-area: main;
 }
                         // ТОП
-                        
+
 .registration {
 
    &__top {
@@ -111,6 +114,167 @@
             padding: 59px 16px;
             text-align: center;
          }
+   }
+}
+
+
+// РЕГИСТРАЦИЯ
+
+.registration {
+
+   &__contant {
+      margin-top: 64px;
+      margin-bottom: 96px;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      @media (max-width: 1139px){
+         margin: 64px 16px 96px 16px;
+      }
+      @media (max-width: 767px){
+         margin: 64px 8px 96px 8px;
+         grid-template-columns: 1fr;
+      }
+   }
+      
+}
+.contant {
+
+   &__left {
+      width: 360px;
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 767px){
+         margin: 0 auto;
+      }
+   }
+
+   &__right {
+      margin-left: 128px;
+      @media (max-width: 992px){
+         margin-left: 23px;
+      }
+      @media (max-width: 767px){
+         width: 360px;
+         // margin-top: 40px;
+         // margin-bottom: 100px;
+         margin: 40px auto 0px;
+         
+      }
+   }
+}
+.date {
+
+   &__title {
+      font-family: 'Lato';
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      color: #222222;
+        
+      
+
+   }
+   &__titleL {
+      font-family: 'Lato';
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      color: #222222;
+      margin-top: 33px;
+   }
+
+   &__input {
+      margin-top: 21px;
+      padding: 12px 0px 15px 16px;
+      border: 1px solid #A4A4A4;
+   }
+
+   &__radio {
+      margin-top: 31px;
+   }
+
+   &__text {
+      font-family: 'Lato';
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      color: #B1B1B1;
+      margin-top: 15px;
+   }
+
+   &__btn {
+      align-self: flex-start;
+      color: #FFFFFF;
+      background: #f0485e;
+      padding: 16px 66px 17px 29px;
+      font-family: 'Lato';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      margin-top: 39px;
+         &:active{
+            transform: scale(0.9);
+         }
+   }
+}
+.radio-label:nth-child(2) {
+   margin-left: 20px;
+}
+.right {
+
+   &__title {
+      font-family: 'Lato';
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      @media (max-width: 992px){
+         font-size: 16px;
+         line-height: 19px;
+      }
+   }
+
+   &__text {
+      font-family: 'Lato';
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      margin-top: 22px;
+      @media (max-width: 992px){
+         font-size: 16px;
+         line-height: 19px;
+         margin-top: 32px;
+      }
+   }
+
+   &__list {
+      
+      font-family: 'Lato';
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      margin-top: 21px;
+      @media (max-width: 992px){
+         font-size: 16px;
+         line-height: 19px;
+      }
+   }
+   &__list li{
+      margin-bottom: 16px;
+      position: relative;
+      padding-left: 43px;
+   }
+
+   &__list li:before{
+      position: absolute;
+      content: "";
+      background: url(../img_reg/galka.png) no-repeat;
+      top: 7px;
+      left: 0;
+      width: 20px;
+      height: 16px;
    }
 }
 

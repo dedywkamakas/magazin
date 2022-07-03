@@ -108,6 +108,11 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-rows: minmax(74px, auto);
   align-items: center;
 }
+@media (max-width: 1139px) {
+  .header__contant {
+    padding: 0px 32px;
+  }
+}
 @media (max-width: 767px) {
   .header__contant {
     padding: 0px 16px;
@@ -166,6 +171,156 @@ h1, h2, h3, h4, h5, h6 {
     padding: 59px 16px;
     text-align: center;
   }
+}
+
+.registration__contant {
+  margin-top: 64px;
+  margin-bottom: 96px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+@media (max-width: 1139px) {
+  .registration__contant {
+    margin: 64px 16px 96px 16px;
+  }
+}
+@media (max-width: 767px) {
+  .registration__contant {
+    margin: 64px 8px 96px 8px;
+    grid-template-columns: 1fr;
+  }
+}
+
+.contant__left {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 767px) {
+  .contant__left {
+    margin: 0 auto;
+  }
+}
+.contant__right {
+  margin-left: 128px;
+}
+@media (max-width: 992px) {
+  .contant__right {
+    margin-left: 23px;
+  }
+}
+@media (max-width: 767px) {
+  .contant__right {
+    width: 360px;
+    margin: 40px auto 0px;
+  }
+}
+
+.date__title {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+.date__titleL {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-top: 33px;
+}
+.date__input {
+  margin-top: 21px;
+  padding: 12px 0px 15px 16px;
+  border: 1px solid #A4A4A4;
+}
+.date__radio {
+  margin-top: 31px;
+}
+.date__text {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin-top: 15px;
+}
+.date__btn {
+  align-self: flex-start;
+  color: #FFFFFF;
+  background: #f0485e;
+  padding: 16px 66px 17px 29px;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 39px;
+}
+.date__btn:active {
+  transform: scale(0.9);
+}
+
+.radio-label:nth-child(2) {
+  margin-left: 20px;
+}
+
+.right__title {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+@media (max-width: 992px) {
+  .right__title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+.right__text {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-top: 22px;
+}
+@media (max-width: 992px) {
+  .right__text {
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 32px;
+  }
+}
+.right__list {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-top: 21px;
+}
+@media (max-width: 992px) {
+  .right__list {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+.right__list li {
+  margin-bottom: 16px;
+  position: relative;
+  padding-left: 43px;
+}
+.right__list li:before {
+  position: absolute;
+  content: "";
+  background: url(../img_reg/galka.png) no-repeat;
+  top: 7px;
+  left: 0;
+  width: 20px;
+  height: 16px;
 }
 
 .connect {
